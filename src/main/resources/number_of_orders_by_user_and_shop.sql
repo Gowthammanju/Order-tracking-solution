@@ -1,0 +1,1 @@
+select count(*) from SHOP_ORDER where user_ref= (select USER.id from USER  where email = 'john.doe@example.com') and  shop_ref= (select SHOP.id from SHOP  where url = 'superexampleshop.com')
